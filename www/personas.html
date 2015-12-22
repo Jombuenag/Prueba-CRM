@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width,
+    height=device-height, target-densitydpi=device-dpi" />
+
+    <!-- Hoja de estilos / Theme -->
+    <link rel="stylesheet" href="./jq/estiloGrade.min.css"/>
+    <link rel="stylesheet" href="./jq/jquery.mobile.icons.min.css" />
+    <!--HOJA DE ESTILOS / CSS JQUERY MOBILE -->
+    <link rel="stylesheet" type="text/jq" href="./jq/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
+
+    <title>Lista de usuarios</title>
+</head>
+<body>
+
+    <div data-role="page" id="listausuarios">
+        <div data-role="header">
+            <h1>LISTA DE USUARIOS</h1>
+        </div>
+    <div data-role="main" class="ui-content">
+            <p id="nombre"></p>
+            <p id="apellidos"></p>
+    </div>
+        <ul data-role="listview">
+        <li><a href="usuarios.html" data-ajax="false">Lista de usuarios<img src=".\img\usuarios.png"></a></li>
+        <li><a href="formulario.html" data-ajax="false">Ir a Formulario<img src=".\img\formulario.png"></a></li>
+        <li><a href="index.html" data-ajax="false">Volver a la barra<img src=".\img\gradelogo.png"></a></li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="./jq/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="./jq/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="./cordova.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="js/salvar.js"></script>
+</body>
+</html>

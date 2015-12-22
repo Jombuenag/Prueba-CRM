@@ -3,44 +3,57 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
+        <meta name="format-detection" content="telephone=yes" />
         <meta name="msapplication-tap-highlight" content="no" />
 
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <!--HOJA DE ESTILOS / CSS JQUERY MOBILE -->
-       <!--<link rel="stylesheet" href="themes/temaAgendapp.min.css"/>-->
-       <link rel="stylesheet" href="./themes/estiloGrade.css"/>
-        <link rel="stylesheet" type="text/jq" href="jq/jquery.mobile-1.4.5.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>AgendAPP</title>
+        <!--HOJA DE ESTILOS / CSS -->
+        <link rel="stylesheet" href="./jq/estiloGrade.min.css" data-ajax="false"/>
+        <link rel="stylesheet" href="./jq/jquery.mobile.icons.min.css" data-ajax="false"/>
+        <!-- HOJA DE ESTILOS JQUERY MOBILE -->
+        <link rel="stylesheet" type="text/jq" href="jq/jquery.mobile-1.4.5.min.css" data-ajax="false"/>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" data-ajax="false"/>
+        <title>TakuCRM</title>
     </head>
         <body>
-        <!-- HOME -->
+
         <div data-role="page" id="formulario">
             <div data-role="main" class="ui-content">
-            <div data-role="header">
-                <h1>FORMULARIOS</h1>
+            <div align="center">
+                <img src=".\img\formulario.png" height="150" width="150" >
+                <!--FORMULARIO Y SUS ELEMENTOS-->
+                <h1>FORMULARIO</h1>
                 <br>
             </div>
-                <p>Por favor rellena los siguientes campos</p>
-            <div class="ui-field-contain formulario">
+                <h2><p>Por favor rellena los siguientes campos</p></h2>
+            <div class="ui-field-contain" formulario>
+                <div align="right">
+                    <img id="avatar" src="./img/imagen.png" width="75px" height="75px" />
+                </div>
                 <input type = "text" name = "nombre" id = "nombre" placeholder = "nombre">
                 <input type = "text" name = "apellidos" id = "apellidos" placeholder = "apellidos">
+                <input type = "text" name = "aniversario" id = "aniversario" placeholder = "edad">
                 <input type = "number" name = "numtelf" id = "numtelf" placeholder = "número de teléfono">
                 <input type = "text" name = "email" id = "email" placeholder = "ejemplo@ejemplo.com">    
+                </div>
+                <div>
+                    <a href="usuarios.html" data-ajax="false" data-role="button" data-inline="true" id="salvar">Guardar datos</a>
+                </div>
                 <br>
-                <br>
-                  <ul data-role = "listview" data-inset="true">
-            <li><a href="index.html">Volver a la barra<img src=".\img\gradelogo.png"></a></li>
+                  <ul data-role="listview" data-inset="true">
+                  <li><a href="usuarios.html" data-ajax="false">Lista de usuarios<img src=".\img\usuarios.png"></a></li>
+                  <li><a href="index.html" data-ajax="false">Volver a la barra<img src=".\img\gradelogo.png"></a></li>
+                  </ul>
         </div>
-        <script type="text/javascript"></script>  
-        <script type="text/css" src="css/estilos.css"></script>
+    </div>
+</div>
+        <script type="text/css" src="./jq/estiloGrade"></script>
+        <script type="text/css" src="./css/index.css"></script>
         <script type="text/javascript" src="jq/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript"src="jq/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="jq/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-  
-        
+        <script type="text/javascript" src="js/salvar.js"></script>
     </body>
 </html>
  
